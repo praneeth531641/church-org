@@ -1,0 +1,103 @@
+/* MainLayout.css */
+
+/* Basic layout styles */
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main module styles (Admin, User, Settings) */
+.sidebar-item {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold; /* Main modules will have bold text */
+  color: #333;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-item:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.sidebar-item-text {
+  margin-left: 10px; /* Space between icon and text */
+}
+
+/* Sub-module styles (Admin, User, Settings sub-items) */
+.sub-nav {
+  margin-left: 15px; /* Adds some space before sub-modules */
+}
+
+.sub-nav-list {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.sidebar-item.sub-nav-item {
+  padding-left: 30px; /* Indentation for sub-modules */
+  font-size: 16px; /* Smaller text for sub-modules */
+  font-weight: normal; /* Sub-modules will have normal font weight */
+}
+
+.sidebar-item.sub-nav-item:hover {
+  background-color: #e9ecef; /* Lighter hover effect for sub-modules */
+}
+
+/* Content area styles */
+.content-area {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.content-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 0;
+    border-right: none;
+  }
+
+  .content-area {
+    padding-left: 10px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+  .sidebar-item {
+    font-size: 16px;
+  }
+  
+  .sidebar-item.sub-nav-item {
+    font-size: 14px; /* Even smaller text for sub-modules on mobile */
+  }
+}
