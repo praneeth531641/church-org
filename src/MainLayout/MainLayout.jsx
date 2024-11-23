@@ -33,14 +33,14 @@ const MainLayout = () => {
               {showUserSubNav && (
                 <div className="sub-nav">
                   <ListGroup variant="flush" className="sub-nav-list">
-                    <ListGroup.Item as={Link} to="/user/flash-news" className="sidebar-item sub-nav-item">
+                    <ListGroup.Item as={Link} to="/user/dashBoard" className="sidebar-item sub-nav-item">
                       <FaCalendarCheck size={20} />
-                      <span className="sidebar-item-text"> Flash News</span>
+                      <span className="sidebar-item-text">User Dashboard</span>
                     </ListGroup.Item>
-                    <ListGroup.Item as={Link} to="/user/notifications" className="sidebar-item sub-nav-item">
+                    {/* <ListGroup.Item as={Link} to="/user/notifications" className="sidebar-item sub-nav-item">
                       <FaBell size={20} />
                       <span className="sidebar-item-text"> Notifications</span>
-                    </ListGroup.Item>
+                    </ListGroup.Item> */}
                     <ListGroup.Item as={Link} to="/user/event-scheduling" className="sidebar-item sub-nav-item">
                       <FaCalendarCheck size={20} />
                       <span className="sidebar-item-text"> Event Scheduling</span>

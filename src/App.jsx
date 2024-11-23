@@ -5,6 +5,8 @@ import MainLayout from './MainLayout/MainLayout';
 import UserInitiation from './UserInitiation/UserInitiation'; 
 import UserForm from './UserForm/UserForm'; 
 import UserDetails from './UserDetails/UserDetails';     // Assuming you have a MainLayout component
+import UserDashboard from './UserDashBoard/UserDashBoard';
+import FlashNews from './FlashNews/FlashNews';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         <Route path="/admin/user-initiation" element={<UserInitiation />} />
         <Route path="/admin/user-initiation/user-form" element={<UserForm />} />
         <Route path="/admin/user-initiation/user-details" element={<UserDetails />} />
+         <Route path="/user/dashBoard" element={<UserDashboard />} />
+         <Route path="/news" element={<FlashNews />} />
 
       </Routes>
     </Router>

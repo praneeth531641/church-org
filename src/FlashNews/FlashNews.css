@@ -1,0 +1,12 @@
+.flash-news-container {
+  margin-bottom: 20px;
+}
+
+.flash-news {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e60000; /* Flashy red color for the marquee */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
